@@ -1,0 +1,8 @@
+In table 1 of the draft, Anna gives limits for six different samples. ie.
+for fR0 = 1e-7, 1e-6.5, 1e-7 with galaxies of vmax < 200 km/s and no
+constraints on vmax. So I generate six subsamples according to her sample
+selection. The first column in the attached files is the ratio of offset to
+the optical radius, second column gives its error and the third column tells
+the screening level of that galaxy (0/1 for unscreened/screened galaxy). The
+file name of each file tells the corresponding subsample.
+Let me know if you have any question
