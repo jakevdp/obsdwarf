@@ -1,4 +1,4 @@
-all: obsdwarf.pdf
+all:
 	pdflatex obsdwarf
 	pdflatex obsdwarf
 	bibtex obsdwarf
