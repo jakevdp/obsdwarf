@@ -1,3 +1,11 @@
 .DS_Store
 *~
 *.pyc
+
+# latex stuff
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.pdf
