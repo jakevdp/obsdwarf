@@ -7,27 +7,17 @@
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{float}
-%\usepackage[draft]{hyperref}
-\usepackage{hyperref}
+\usepackage[draft]{hyperref}
+%\usepackage{hyperref}
 
 \usepackage{color}
-\newcommand{\jakesays}[1]{{\color{red}[Jake says: #1]}}
-\newcommand{\vinusays}[1]{{\color{blue}[Vinu says: #1]}}
+%\newcommand{\jakesays}[1]{{\color{red}[Jake says: #1]}}
+%\newcommand{\vinusays}[1]{{\color{blue}[Vinu says: #1]}}
 
 %\usepackage{longtable}
 % \setlength{\LTcapwidth}{7in} %set the width of table comment 
 %\usepackage{dsfont}
 %\usepackage[toc,page]{appendix}
-\newcommand\mC{\mbox{\bf C}}
-\newcommand\vdelta{\mbox{\boldmath $\delta$}}
-\newcommand\veta{\mbox{\boldmath$\eta$}}
-\newcommand\vw{\mbox{\boldmath$w$}}
-\newcommand\vb{\mbox{\boldmath$b$}}
-\newcommand\vv{\mbox{\boldmath$v$}}
-\newcommand\vk{\mbox{\boldmath$k$}}
-\newcommand\vc{\mbox{\boldmath$c$}}
-\newcommand\noise{{\cal N}}
-\newcommand\vN{\mbox{\boldmath $\noise$}}
 \newcommand{\mnras}{MNRAS}
 \newcommand{\apj}{ApJ}
 \newcommand{\aaps}{A\&AS}
@@ -74,7 +64,7 @@ kinematics
 and morphology of dwarf galaxies, motivated by the theoretical work of
 Hui et al. (2009) and Jain \& Vanderplas (2011). In a wide class of
 gravity theories a scalar field couples to matter and provides an attractive
-fifth force. Due to their different densities,
+fifth force. Due to their different self-gravity,
 stars and gas may respond differently to the scalar force leading
 to several observable deviations from standard gravity.  
 HI gas, red giant stars and main sequence stars
@@ -85,8 +75,9 @@ To distinguish the effects of modified
 gravity from standard astrophysical phenomena, we use a control sample of
 galaxies that are expected to be screened from the fifth force.
 In all cases we find no significant deviation
-from the null hypothesis of general relativity. The limits obtained from dwarf galaxies are not yet competitive with the limits from cepheids obtained in our first paper. 
-We discuss how our methodology can be applied to improve gravity tests with 
+from the null hypothesis of general relativity. The limits obtained from dwarf galaxies are not yet competitive with the limits from cepheids obtained in our first paper, but
+can be improved to probe regions of parameter space that are inaccessible using
+other tests. We discuss how our methodology can be applied to 
 new radio and optical observations of nearby galaxies.
 \nocite{hui09, bhuvjake2011}
 \end{abstract}
@@ -112,12 +103,12 @@ regime.
  A modification of GR on large (astrophysical) scales generically leads to
 scalar-tensor theories of gravity, where a new scalar field couples to gravity.
 Equivalently these theories can be described via a coupling of the scalar field
-to matter, which leads to enhancements of the gravitational force.
+to matter, which leads to enhancements of the gravitational force. 
 Nonrelativistic matter -- such as the stars, gas, and dust in galaxies -- will
 feel this enhanced force, which in general leads to larger dynamically inferred
 masses. The discrepancy can be up to a factor of 1/3 in f(R) or DGP gravity. We
 note that photons, being relativistic, do not feel the enhanced force, so that
-lensing measurements probe the true mass distribution.
+lensing measurements probe the true mass distribution.  
  
 This enhanced gravitational force should be detectable through fifth force 
 experiments, tests of the equivalence principle (if the scalar coupling to
@@ -129,21 +120,33 @@ that Solar System and lab tests can then be satisfied. This screening was
 originally suggested to hide the effects of a quintessence-like scalar that
 forms the dark energy and may couple to matter -- generically such a coupling is
 expected unless forbidden by a symmetry -- so there are theoretical
-reasons to expect such
+reasons to expect 
 a screening effect to operate in either a dark energy or modified gravity
 scenario. Indeed, since there are only a handful of screening mechanisms
 (Vainshtein and symmetron screening are discussed below), small scale tests of
 gravity that rely on distinct signatures of screening are useful discriminators
 of cosmological models.
 
+In this paper we will consider deviations from GR exhibited in
+theories that rely on chameleon screening.
+Qualitatively similar behavior occurs in symmetron screening
+\citep{hinterbichler10} and the environmentally dependent
+dilaton \citep{brax10} and the tests we  present here apply
+to these mechanisms as well\footnote{In order to identify the screened and
+  unscreened galaxies it is necessary to calibrate on N-body simulations,
+  which give different criteria for different screening mechanisms. While
+  we do not implement criteria for any mechanism other than chameleon,  
+  our results appear robust to the details of screening.}. 
+
 While local dynamical studies suggest that any fifth-force effects must be
 screened within the Milky Way, 
 dwarf galaxies in low-density environments may remain unscreened as the 
-Newtonian potential (which determines the level of screening) is an order of
-magnitude smaller in magnitude than in the Milky Way. Hence dwarf galaxies can
-exhibit manifestations of modified forces in both their infall motions and
-internal dynamics. \citet{hui09}, \citet{hui10}, \citet{bhuvjake2011},
-\citet{changhui}, and \cite{jainvinu2012}
+Newtonian potential (which determines the level of screening) can be an order of
+magnitude 
+smaller in magnitude than in the Milky Way. Hence dwarf galaxies can
+exhibit manifestations of modified forces in  their infall motions, 
+internal dynamics and segregation of stars, black holes and gas. \citet{hui09}, \citet{hui10}, \citet{bhuvjake2011},
+\citet{changhui}, and \citet{jainvinu2012}
 discuss various observational consequences. Indeed the small scale dynamics of 
 nearby galaxies may have a bigger signal of MG than large-scale perturbations 
 \citep[see][for a discussion of observational approaches]{jain11}.
@@ -152,16 +155,18 @@ In this work, we discuss observable effects on disk galaxies that  arise due to
 their internal dynamics or their interaction with a neighbor or other sources of
 an external gravitational field. We focus on late-type dwarf galaxies as these
 are most likely to be unscreened. The observational effects are rooted in the
-fact that under certain modified gravity theories, denser matter within
-the dwarf galaxies will self-screen, and thus respond to a different
-gravitational potential than the less dense, and therefore unscreened, matter.
+fact that compact objects like stars within
+the dwarf galaxies can self-screen, and thus respond to a different
+gravitational potential than the diffuse unscreened components like gas and dark matter.
 So, for example, if the stellar component of a dwarf galaxy self-screens,
-it will lag the dark matter and HI disk in the infall towards
+it will lag the dark matter and HI gas disk in the infall towards
 another galaxy. This may lead to a separation of the stellar disk from the
 center of mass of the dark matter and from the HI disk, and lead to
 observable distortions of the morphology and/or dynamics of the stellar disk.
-
-The origin of these effects, however, 
+\citet{bhuvjake2011} computed a variety of dynamical consequences of these
+effects. 
+ 
+However, the origin of modified gravity effects
 may be difficult to disentangle from other astrophysical
 processes. To address this, we create a control samples of screened galaxies
 which are not expected to show any of the expected modified gravity effects.
@@ -170,11 +175,12 @@ sample, we may derive constraints on modified gravity parameters.
 The division of observed galaxies into screened and unscreened samples
 is accomplished based on an estimate of
 the local value of the external gravitational potential at the location
-of each galaxy: see \cite{cabre2012} for a description on the methodology
-used to distinguish the screened and unscreened sample.
-\cite{jainvinu2012} have recently made use of this methodology and
-published modified gravity constraints
-based on cosmological distance measurements.
+of each galaxy: see \cite{cabre2012} for a description of the methodology
+used to distinguish the screened and unscreened samples.
+\cite{jainvinu2012} used this methodology and
+obtained modified gravity constraints
+based on cepheid variable stars and other distance indicators.
+This paper is the third in the series of papers on astrophysical tests of gravity: 
 
 In this paper we perform several of the proposed tests of modified gravity
 using currently available data. Because of the low signal-to-noise of these
@@ -184,17 +190,6 @@ Therefore, one of the main goals of this paper is to show the strengths and
 weaknesses of currently available data for these tests, and explore the
 requirements for future data in this area.
 
-In this paper we will consider deviations from GR exhibited in
-theories that rely on chameleon screening.
-Qualitatively similar behaviour occurs in symmetron screening
-\citep{hinterbichler10} and the environmentally dependent
-dilaton \citep{brax10} and the tests we  present here apply
-to these mechanisms as well\footnote{In order to identify the screened and
-  unscreened galaxies it is necessary to calibrate on N-body simulations,
-  which give different criteria for different screening mechanisms. While
-  we do not implement criteria for any mechanism other than chameleon,  
-  our results appear robust to the details of screening.}. 
-
 This paper is organized as follows. In section \ref{pot-sec} we describe the
 method to generate potential map of the local Universe, which allows us to
 prepare our samples of screened and unscreened galaxies.
@@ -202,9 +197,9 @@ In section  \ref{sec:test-summary} we briefly summarize each of the observable
 effects we will use to test modified gravity.
 In section \ref{sec:offset} we describe the offset between stellar
 and gaseous components, which includes:
-offset between HI and optical centroid (section \ref{sec:h1-opt-offset}), 
+offset between HI and optical centroids (section \ref{sec:h1-opt-offset}), 
 offset between optical center and \ha{} center (section \ref{sec:kinematical}), 
-and offset between red giants and main sequence stars centroid (section
+and offset between red giants and main sequence stars  (section
 \ref{sec:rgb}).
 In section \ref{sec:warp} we study MG-induced warping of edge-on galaxies.
 In section \ref{sec:rotationcurves} we describe the tests based on
@@ -309,9 +304,9 @@ A detailed discussion of these uncertainties can be found in \citet{cabre2012}.
 
 In chameleon gravity theories, objects with large gravitational potential
 may be self-screened (see Eq.~\ref{eq:criterion}).  This may lead to observable
-differences in the dynamics of different galactic components: for example,
-low-density components such as the gaseous disk, dark matter halo, and giant
-stars may feel the fifth force, while the dense, self-screened main sequence
+differences in the dynamics of different galactic components:  
+the gaseous disk, dark matter halo, and giant
+stars may feel the fifth force, while the self-screened main sequence
 stars move according to standard gravitational dynamics.
 The different forces on these components lead to several potentially observable
 morphological and kinematical differences between the two components. In
@@ -321,13 +316,10 @@ as potential observational tracers of these effects.
 
 \subsection{Summary of physical effects of modified gravity}
 The following effects of modified gravity are expected to appear in 
-dwarf galaxies in which the
-low-density components (gas, dust, dark matter, and
-the shells of the largest stars) are unscreened, while higher-density
-components (main sequence stars) are self-screened.
+unscreened dwarf galaxies.
 Quantitative estimates of the magnitude of these
 observables are given in the following sections.
-For more details and motivation of these predictions see \citet{bhuvjake2011}. 
+For more details and motivation of these predictions, see \citet{bhuvjake2011}. 
 
 \begin{enumerate}
 \item \textbf{Offset between stellar and gaseous components (section
@@ -1752,7 +1744,7 @@ between gravity theories: the data is consistent with both GR and MG at
 a 2-$\sigma$ level.  This test has the potential to improve as more stellar
 populations are observed within nearby dwarf galaxies.
 
-\item {\it Warping in edge-on galaxies:}
+\item {\it Warps in edge-on galaxies:}
 The warp study relies on measurements of the optical morphology of stellar
 disks of late-type galaxies observed by SDSS.
 We find that the warp measures for the current galaxy are
@@ -1765,7 +1757,7 @@ from the current $\sim$500 galaxies to large number
 with estimates of the internal halo profile.
 
 \item {\it Rotation curve tests: }
-In the final test we used the GHASP sample to estimate
+In the final test we used the GHASP galaxy sample to estimate
 the asymmetry in the \ha{} rotation curves, which arises due to the
 offset between the screened stellar component and the unscreened gaseous
 component. We find that the asymmetry attributable to modified gravity is as
@@ -1777,6 +1769,7 @@ major uncertainties: systematic uncertainties in the data due to effects of
 asymmetric drift and non-circular motions, and systematic uncertainties in
 the theoretical expectation due to insufficient knowledge of the internal
 halo parameters and external environment of each galaxy.
+\end{itemize}
 
 Finally, we examined individual rotation curves from the GHASP 
 galaxies and classified them based on the different signatures 
@@ -1789,7 +1782,6 @@ like U-type warps and optical offset from that of HI.
 More detailed studies of these individual cases can shed light
 on whether the features may be attributable to fifth-force effects or
 more traditional astrophysical processes.
-
 
 
 \subsection{Systematic errors and caveats}
@@ -1833,8 +1825,9 @@ of the tests only a $\sim 10$ Mpc sized region needs to studied in detail, so
 the observations and modeling are tractable. 
 
 \subsection{Future prospects}
-Here we summarize our suggestions for future attempts at constraining
-gravity theories using observations of dwarf galaxies.
+Here we discuss specific ways to sharpen each of the tests we have carried out and summarized above in subsection 7.1. Before we get to these tests, we note that a variety of experiments can be used to test gravity theories, ranging from laboratory to cosmological scales. For chameleon type scalar-tensor theories, the first in our series of papers \citet{cepheid} used cepheid variable stars and other distance indicators to place stringent limits on the two parameters of the theories: the coupling $\alpha$ (related to $\Delta G/G$ in this paper) and the background field value (equivalent to $f_{R0}$ in this paper).  The upper limit for $f(R)$ models obtained using cepheids correspond to $\Delta G/G\simeq 1/3; f_{R0}\simeq 5\times10^{-7}$. Dwarf galaxy tests currently probe larger coupling values. However the field values probed can be lower, especially with the fainter dwarf galaxies within $\sim 10$ Mpc of the Milky Way. 
+A brief discussion of prospects for improved constraints on both parameters follows. 
+
 \begin{itemize}
 \item {\it Offset between HI gas and stars:}
   For this test to produce competitive constraints, it is crucial to improve
@@ -1902,7 +1895,7 @@ for providing us their SDSS group catalog and to Richard Swaters for
 rotation curve data. We have used published data from a variety of sources
 cited in the text.  
 We thank Mike Jarvis for several valuable suggestions and Gary 
-Bernstein, Lam Hui, 
+Bernstein, Julianne Dalcanton, Lam Hui, Kazuya Koyama, 
 Elisabeth Krause, Adam Lidz, Karen Masters, Masao Sako, 
 Matt Walker and Gongbo Zhao for helpful
 discussions. This work was partially supported by NSF grant AST-0908027.
