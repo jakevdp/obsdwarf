@@ -7,8 +7,8 @@
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{float}
-%\usepackage[draft]{hyperref}
-\usepackage{hyperref}
+\usepackage[draft]{hyperref}
+%\usepackage{hyperref}
 
 \usepackage{color}
 \newcommand{\jakesays}[1]{{\color{red}[Jake says: #1]}}
@@ -49,9 +49,9 @@
 
 
 \title[Astrophysical Tests of Modified Gravity]{Astrophysical Tests
-of Modified Gravity: the Morphology and Kinematics of Dwarf Galaxy} 
-\author[Vikram, V. {\it et al.}]{Vinu Vikram, Anna Cabr\'e, Bhuvnesh Jain, J.
-T. VanderPlas\\
+of Modified Gravity: the Morphology and Kinematics of Dwarf Galaxies} 
+\author[Vikram, V. {\it et al.}]{Vinu Vikram, Anna Cabr\'e, Bhuvnesh Jain, Jake  
+VanderPlas\\
   Department of Physics and Astronomy, University of Pennsylvania, 
   Philadelphia, PA 19104\\
   Center for Particle Cosmology, University of Pennsylvania, 
@@ -67,16 +67,16 @@ T. VanderPlas\\
 
 
 \begin{abstract}
-This paper is the third in a series of tests of gravity using observations of 
+This paper is the third in a series on tests of gravity using observations of 
 stars and nearby
 dwarf galaxies. We carry out four distinct tests using published data on the
 kinematics
 and morphology of dwarf galaxies, motivated by the theoretical work of
 Hui et al. (2009) and Jain \& Vanderplas (2011). In a wide class of
 gravity theories a scalar field couples to matter and provides an attractive
-fifth force. Due to their different densities,
+fifth force. Due to their different self-gravity,
 stars and gas may respond differently to the scalar force leading
-to several observable deviations from standard gravity: 
+to several observable deviations from standard gravity.  
 HI gas, red giant stars and main sequence stars
 can be displaced relative to each other,
 and the stellar disk can display warps or asymmetric rotation curves
@@ -85,12 +85,16 @@ To distinguish the effects of modified
 gravity from standard astrophysical phenomena, we use a control sample of
 galaxies that are expected to be screened from the fifth force.
 In all cases we find no significant deviation
-from the null hypothesis of general relativity. We have used a variety of
-sources of data to carry out these tests. We discuss how 
-improved tests can be perfomed with a more comprehensive analysis and
-new observations of nearby galaxies in the optical and radio.
+from the null hypothesis of general relativity. The limits obtained from dwarf galaxies are not yet competitive with the limits from cepheids obtained in our first paper, but
+can be improved to probe regions of parameter space that are inaccessible using
+other tests. We discuss how our methodology can be applied to 
+new radio and optical observations of nearby galaxies.
 \nocite{hui09, bhuvjake2011}
 \end{abstract}
+
+\begin{keywords}
+Modified gravity
+\end{keywords}
 
 \section{Introduction}
 The explanation of the observed accelerated expansion of the universe remains a
@@ -113,12 +117,12 @@ regime.
  A modification of GR on large (astrophysical) scales generically leads to
 scalar-tensor theories of gravity, where a new scalar field couples to gravity.
 Equivalently these theories can be described via a coupling of the scalar field
-to matter, which leads to enhancements of the gravitational force.
+to matter, which leads to enhancements of the gravitational force. 
 Nonrelativistic matter -- such as the stars, gas, and dust in galaxies -- will
 feel this enhanced force, which in general leads to larger dynamically inferred
 masses. The discrepancy can be up to a factor of 1/3 in f(R) or DGP gravity. We
 note that photons, being relativistic, do not feel the enhanced force, so that
-lensing measurements probe the true mass distribution.
+lensing measurements probe the true mass distribution.  
  
 This enhanced gravitational force should be detectable through fifth force 
 experiments, tests of the equivalence principle (if the scalar coupling to
@@ -130,21 +134,34 @@ that Solar System and lab tests can then be satisfied. This screening was
 originally suggested to hide the effects of a quintessence-like scalar that
 forms the dark energy and may couple to matter -- generically such a coupling is
 expected unless forbidden by a symmetry -- so there are theoretical
-reasons to expect such
+reasons to expect 
 a screening effect to operate in either a dark energy or modified gravity
 scenario. Indeed, since there are only a handful of screening mechanisms
 (Vainshtein and symmetron screening are discussed below), small scale tests of
 gravity that rely on distinct signatures of screening are useful discriminators
 of cosmological models.
 
+In this paper we will consider deviations from GR exhibited in
+theories that rely on chameleon screening.
+Qualitatively similar behavior occurs in symmetron screening
+\citep{hinterbichler10} and the environmentally dependent
+dilaton \citep{brax10} and the tests we  present here apply
+to these mechanisms as well\footnote{In order to identify the screened and
+  unscreened galaxies it is necessary to calibrate on N-body simulations,
+  which give different criteria for different screening mechanisms. While
+  we do not implement criteria for any mechanism other than chameleon,  
+  our results appear robust to the details of screening.}. 
+
 While local dynamical studies suggest that any fifth-force effects must be
 screened within the Milky Way, 
 dwarf galaxies in low-density environments may remain unscreened as the 
-Newtonian potential (which determines the level of screening) is an order of
-magnitude smaller in magnitude than in the Milky Way. Hence dwarf galaxies can
-exhibit manifestations of modified forces in both their infall motions and
-internal dynamics. \citet{hui09}, \citet{hui10}, \citet{bhuvjake2011},
-\citet{changhui}, and \cite{jainvinu2012}
+Newtonian potential (which determines the level of screening) can be an order of
+magnitude 
+smaller in magnitude than in the Milky Way. Hence dwarf galaxies can
+exhibit manifestations of modified forces in  their infall motions, 
+internal dynamics and segregation of stars, black holes and gas. \citet{hui09}, \citet{hui10}, \citet{bhuvjake2011},
+\citet{changhui}, \citet{Davis2012} and 
+\citet{jainvinu2012}
 discuss various observational consequences. Indeed the small scale dynamics of 
 nearby galaxies may have a bigger signal of MG than large-scale perturbations 
 \citep[see][for a discussion of observational approaches]{jain11}.
@@ -153,16 +170,18 @@ In this work, we discuss observable effects on disk galaxies that  arise due to
 their internal dynamics or their interaction with a neighbor or other sources of
 an external gravitational field. We focus on late-type dwarf galaxies as these
 are most likely to be unscreened. The observational effects are rooted in the
-fact that under certain modified gravity theories, denser matter within
-the dwarf galaxies will self-screen, and thus respond to a different
-gravitational potential than the less dense, and therefore unscreened, matter.
+fact that compact objects like stars within
+the dwarf galaxies can self-screen, and thus respond to a different
+gravitational potential than the diffuse unscreened components like gas and dark matter.
 So, for example, if the stellar component of a dwarf galaxy self-screens,
-it will lag the dark matter and HI disk in the infall towards
+it will lag the dark matter and HI gas disk in the infall towards
 another galaxy. This may lead to a separation of the stellar disk from the
 center of mass of the dark matter and from the HI disk, and lead to
 observable distortions of the morphology and/or dynamics of the stellar disk.
-
-The origin of these effects, however, 
+\citet{bhuvjake2011} computed a variety of dynamical consequences of these
+effects. 
+ 
+However, the origin of modified gravity effects
 may be difficult to disentangle from other astrophysical
 processes. To address this, we create a control samples of screened galaxies
 which are not expected to show any of the expected modified gravity effects.
@@ -171,11 +190,12 @@ sample, we may derive constraints on modified gravity parameters.
 The division of observed galaxies into screened and unscreened samples
 is accomplished based on an estimate of
 the local value of the external gravitational potential at the location
-of each galaxy: see \cite{cabre2012} for a description on the methodology
-used to distinguish the screened and unscreened sample.
-\cite{jainvinu2012} have recently made use of this methodology and
-published modified gravity constraints
-based on cosmological distance measurements.
+of each galaxy: see \cite{cabre2012} for a description of the methodology
+used to distinguish the screened and unscreened samples.
+\cite{jainvinu2012} used this methodology and
+obtained modified gravity constraints
+based on cepheid variable stars and other distance indicators.
+This paper is the third in the series of papers on astrophysical tests of gravity: 
 
 In this paper we perform several of the proposed tests of modified gravity
 using currently available data. Because of the low signal-to-noise of these
@@ -185,17 +205,6 @@ Therefore, one of the main goals of this paper is to show the strengths and
 weaknesses of currently available data for these tests, and explore the
 requirements for future data in this area.
 
-In this paper we will consider deviations from GR exhibited in
-theories that rely on chameleon screening.
-Qualitatively similar behaviour occurs in symmetron screening
-\citep{hinterbichler10} and the environmentally dependent
-dilaton \citep{brax10} and the tests we  present here apply
-to these mechanisms as well\footnote{In order to identify the screened and
-  unscreened galaxies it is necessary to calibrate on N-body simulations,
-  which give different criteria for different screening mechanisms. While
-  we do not implement criteria for any mechanism other than chameleon,  
-  our results appear robust to the details of screening.}. 
-
 This paper is organized as follows. In section \ref{pot-sec} we describe the
 method to generate potential map of the local Universe, which allows us to
 prepare our samples of screened and unscreened galaxies.
@@ -203,9 +212,9 @@ In section  \ref{sec:test-summary} we briefly summarize each of the observable
 effects we will use to test modified gravity.
 In section \ref{sec:offset} we describe the offset between stellar
 and gaseous components, which includes:
-offset between HI and optical centroid (section \ref{sec:h1-opt-offset}), 
+offset between HI and optical centroids (section \ref{sec:h1-opt-offset}), 
 offset between optical center and \ha{} center (section \ref{sec:kinematical}), 
-and offset between red giants and main sequence stars centroid (section
+and offset between red giants and main sequence stars  (section
 \ref{sec:rgb}).
 In section \ref{sec:warp} we study MG-induced warping of edge-on galaxies.
 In section \ref{sec:rotationcurves} we describe the tests based on
@@ -242,7 +251,8 @@ galaxies which satisfy the following conditions:
 \end{equation}
 The first condition describes the {\it self-screening} condition, with 
 $ |\phi_{\rm int}|= GM/r_{\rm vir}$, where the $M$ and $r_{\rm vir}$ are the
-mass and virial radius. The second condition describes {\it environmental
+mass and virial radius. We typically use measurements of the circular velocity at large radii to establish self-screening, since we work with rotating disk galaxies for our tests. 
+The second condition describes {\it environmental
 screening} condition, with $|\phi_{\rm ext}|$ representing the
 Newtonian potential due to the neighbor galaxies within the background Compton
 length $\lambda_C$.
@@ -310,9 +320,9 @@ A detailed discussion of these uncertainties can be found in \citet{cabre2012}.
 
 In chameleon gravity theories, objects with large gravitational potential
 may be self-screened (see Eq.~\ref{eq:criterion}).  This may lead to observable
-differences in the dynamics of different galactic components: for example,
-low-density components such as the gaseous disk, dark matter halo, and giant
-stars may feel the fifth force, while the dense, self-screened main sequence
+differences in the dynamics of different galactic components:  
+the gaseous disk, dark matter halo, and giant
+stars may feel the fifth force, while the self-screened main sequence
 stars move according to standard gravitational dynamics.
 The different forces on these components lead to several potentially observable
 morphological and kinematical differences between the two components. In
@@ -322,13 +332,10 @@ as potential observational tracers of these effects.
 
 \subsection{Summary of physical effects of modified gravity}
 The following effects of modified gravity are expected to appear in 
-dwarf galaxies in which the
-low-density components (gas, dust, dark matter, and
-the shells of the largest stars) are unscreened, while higher-density
-components (main sequence stars) are self-screened.
+unscreened dwarf galaxies.
 Quantitative estimates of the magnitude of these
 observables are given in the following sections.
-For more details and motivation of these predictions see \citet{bhuvjake2011}. 
+For more details and motivation of these predictions, see \citet{bhuvjake2011}. 
 
 \begin{enumerate}
 \item \textbf{Offset between stellar and gaseous components (section
@@ -339,13 +346,14 @@ neutral hydrogen clouds (HI) will fall faster along an external potential
 than will self-screened stars. 
 This difference in acceleration may cause a measurable offset between the
 centroid of the stellar disk and the gaseous disk. 
+The population of red giant stars, being partially screened, may also show
+an observable offset from the population of main sequence stars.
 The size of the offset
 depends strongly on the mass and concentration of the dwarf galaxy's halo,
 as well as the distance to neighboring galaxies.
-The population of red giant stars, being partially screened, may also show
-an observable offset from the population of main sequence stars.
 \citet{bhuvjake2011} estimate this offset may be several percent of the virial
-radius of suitable dwarf galaxies.
+radius of suitable dwarf galaxies. We carry out three tests of such offsets in 
+section 4.  
 
 \item \textbf{Warping of the stellar disk (section \ref{sec:warp}):}
 As the halo moves along an external potential gradient,
@@ -378,7 +386,7 @@ show in section 6.2.
 In principle the rotation velocity of an unscreened gaseous
 disk is also enhanced relative to the stellar disk by a factor of
 $\sqrt{1 + \Delta G/G}$, where $\Delta G$ is the contribution of the fifth force
-to the self-gravity of a galaxy \citep{hui10}. 
+to the self-gravity of a galaxy \citep{hui09}. 
 We find that current data
 is unsuitable to carry out this test: 
 see section 6.1 for a discussion of current data and its limitations. 
@@ -401,9 +409,10 @@ unscreened populations.
 \begin{figure*}
 \centering
 \includegraphics[width=0.8\textwidth]{figures/Offset_HI_optical_scatter_jake.png}
-\caption{The distributions of measured offset between HI and
-optical centroids for galaxies with different screening levels.
-The black (red) points represent screened (unscreened) objects for
+\caption{The distribution of the measured offset between the HI and
+optical centroids for galaxies observed by the ALFALFA and SDSS surveys.
+The black (red) points represent screened (unscreened) galaxies for model
+parameter values 
 $f_{R0}=1\times10^{-6}$ (left panel) and $f_{R0}=2\times10^{-7}$ (right panel)}
 \label{fig:offset}
 \end{figure*}
@@ -481,10 +490,9 @@ Here the optical observations are taken from the SDSS $r$-band \citep{aba09}
 while the HI centroids
 are taken from the ALFALFA survey which used the Arecibo radio telescope
 \citep{giovanelli2005, gio07, sai08,ken08,mar09}.
-
-
-The astrometric precision of these observations are limited by the
-relatively large beam size of the radio imagery (24 arcsec).
+The astrometric precision (about 24 arcseconds) 
+of these observations are limited by the
+relatively large beam size of the radio maps.
 Though the low resolution of the HI image makes any offset difficult to
 measure for a single image,
 the statistical uncertainty can be reduced by considering a large sample of
@@ -498,7 +506,7 @@ galaxies.
 %large uncertainty for less massive galaxies compared to massive galaxies, then
 %such a systematic measurement can mimic the effect we are searching for.
 
-To further reduce the  uncertainty in the spatial centroiding,
+To  reduce the  uncertainty in the spatial centroiding,
 we limit our sample to those galaxies within 40 Mpc.
 To minimize the error introduced by the incompleteness in our catalog described
 in Section \ref{pot-sec}, we further  restrict our analysis to the SDSS region,
@@ -537,8 +545,8 @@ for $f_{R0} = 2 \times10^{-7}$ ($f_{R0} = 10^{-6}$).
 In Figure \ref{fig:offset} we show the measured HI/optical
 offset for samples of different screening level, along with the
 distributions of offsets for two values of $f_{R0}$.
-The errors shown are estimated from the 24 arcsec beam
-size of the radio imagery, converted to a physical extent using the
+The errors shown are estimated from the 24 arcsec centroid 
+error of the radio maps, converted to a physical distance using the
 distance to each galaxy.
 
 The interpretation of any observed offset
@@ -585,17 +593,17 @@ measurement error associated with observation $i$.
 \begin{figure*}
 \centering
 \includegraphics[scale=0.7]{figures/Offset_HI_optical_jake.png}
-\caption{The $1-$, $2-$, and $3-\sigma$ contours for the scatter in observed
+\caption{The $1$-, $2$-, and $3$-$\sigma$ contours for the scatter in observed
   HI/optical centroid separations in nearby dwarf galaxies.  The left panel
   shows the results given the observed sample of 245 dwarf galaxies described
-  in \S\ref{sec:h1-opt-offset}.  Because of the large (24 arcsec) beam size of
-  the radio imagery, the data cannot distinguish between modified gravity and
+  in \S\ref{sec:h1-opt-offset}.  Because of the large  beam size of
+  the radio maps, the data cannot distinguish between modified gravity and
   general relativity.  The right panel shows a simulated sample drawn from the
-  model with a scatter due to modified gravity of $0.5$kpc (indicated by the
+  model with a scatter due to modified gravity of $0.5$ kpc (indicated by the
 'X'), % $\cross$),
-  with a factor of ten improvement in astrometric precision.  The resulting
+  with a factor of ten improvement in astrometric precision (or a combination of improved astrometry and larger sample size).  The resulting
   posterior can distinguish the predicted effects of modified gravity at the
-  $1\sigma$ level.}
+  1-$\sigma$ level.}
 \label{fig:offset-analysis}
 \end{figure*}
 
@@ -627,7 +635,9 @@ not precise enough to rule-out a $\sim 1$kpc scatter due to modified
 gravity: this is primarily due to the large observational error in the
 measurement of the radio centroid.  In the right panel, we see that
 if the aggregate astrometric accuracy were to be improved by a factor of 10
-(i.e.\ a 2.4 arcsec beam, or a factor of $10^2$ increase in the sample size),
+(i.e.\ a 2.4 arcsecond centroid accuracy, 
+or a factor of 100 increase in the sample size, or some combination of these
+two improvements),
 the observations would be sensitive enough to detect a scatter due to
 modified gravity of $~\sim 0.5$kpc, on the order of the offsets
 predicted by \citep{bhuvjake2011} for typical MG theories.
@@ -640,7 +650,7 @@ degenerate with the astrophysical offset: any increase in assumed measurement
 error will be offset by a commensurate decrease in the astrophysical scatter
 at maximum likelihood.  Furthermore, because the uncertainty of the measurement
 dominates the signal by a factor of up to 4 for each galaxy, even a 10\%
-overestimate or underestimate in the beam size will lead to significant
+overestimate or underestimate in the centroid error will lead to significant
 differences in the maximum likelihood fit.  This caveat should be kept in
 mind when interpreting Figure \ref{fig:offset-analysis}.
 
@@ -656,7 +666,8 @@ could provide strong constraints on typical modified gravity theories.
 \begin{figure*}
 \begin{center}
   \includegraphics[width=0.8\textwidth]{figures/sec4_2_scatter.png}
-  \caption{The distribution of observed galaxies used in Sec
+  \caption{The distribution of galaxies used for the optical/kinematic offset
+  test described in Sec
     \ref{sec:kinematical}.  The left panel shows the distance and maximal
     rotation velocity (a tracer of mass) of the galaxy sample; the right
     panel shows the relative offset between the gaseous and stellar components.
@@ -856,11 +867,13 @@ effects to the offset between kinematical and optical centroids
 (see discussion of this model in Sec \ref{sec:h1-opt-offset}).  The left
     panel shows a mildly significant offset due to modified gravity:
     we argue that this is due to the bias of the screened sample toward
-    high masses.  After controling for this by removing galaxies
-    with rotation greater than 200 km/s, the posterior becomes
-    consistent with General Relativity, though cannot rule-out
-    separations due to modified gravity of a few percent of the optical
-    radius.}
+    high masses.  After controlling for this by removing galaxies
+    with rotation greater than 200 km/s, the estimate is
+    consistent with GR. 
+    %We cannot rule-out
+    %separations due to modified gravity of a few percent of the optical
+    %radius.
+    }
   \label{offset-kin-den-2}
 \end{center}
 \end{figure*}
@@ -931,7 +944,7 @@ lower than the number of main sequence stars, the error in the centroid
 displacement is dominated by the error in the centroid position of
 the red giant sample.
 
-\subsubsection{Estimation of external force}
+\subsubsection{Estimation of the external fifth force}
 Because of the lack of control sample, detecting modified gravity here
 depends on correlating the direction of displacement with the strength
 and direction of the background gravitational potential gradient at
@@ -971,18 +984,16 @@ dominant source of error.
 
 \begin{figure*}
 \includegraphics[scale=0.5]{figures/dispprojforce.png}
-  \caption{The displacement of red giants from main sequence stars projected to
-the external force as a function of the external force per unit mass
-(Eq. \ref{eq:accelaration}) for our
-set of galaxies.
-On the left, we show $f_{R0}=10^{-6}$, and on the right, $f_{R0}=10^{-7}$. All
-the galaxies are unscreened (red). There is no significant correlation between
+  \caption{The displacement of red giants from main sequence stars projected along 
+the external fifth force from a sample of 28 nearby dwarf galaxies. The displacement is plotted as a function of the external force per unit mass
+(Eq. \ref{eq:accelaration}). 
+In the left (right) panel, we set $f_{R0}=10^{-6} (10^{-7})$. 
+All the galaxies are unscreened. There is no significant correlation between
 the
-displacement and the applied force for $f_{R0}=10^{-6}$ and $f_{R0}=10^{-7}$.
+displacement and the applied force.
  The mean displacement in the direction of the 
-external force is $-10.2\pm5.5$ pc for $f_{R0}=10^{-6}$ and $-4.7\pm6.4$ pc for
-$f_{R0}=10^{-7}$, which proves that both cases are consistent with general
-relativity.
+external force is $-10.2\pm5.5$ pc  and $-4.7\pm6.4$ pc for
+the two cases, consistent with GR. 
 \label{fig:rgdispprojforce}}
 \end{figure*}
 
@@ -1062,12 +1073,12 @@ systematic uncertainties involved in this test.
 
 \begin{figure*}
 \includegraphics[scale=0.5]{figures/disppred.png}
-  \caption{Here we compare the displacement in the direction of the external
-force ($y$-axis) with the predicted displacement ($x$-axis) assuming $\Delta
-G/G=1$. On the
-left, we show $f_{R0}=10^{-6}$, and on the right, $f_{R0}=10^{-7}$. The solid
-line shows the one to one correspondence. The observations are consistent with
-general relativity, and it is difficult to rule out any modified gravity theory
+  \caption{The estimated projected displacement, as in Fig. 5, is compared with the predicted displacement assuming $\Delta
+G/G=1$. In the left (right) panel, we set $f_{R0}=10^{-6} (10^{-7})$. 
+ The solid
+line shows the one to one correspondence. It is evident that while 
+the observations are consistent with
+GR, one cannot rule out modified gravity 
 given the large errors in the predictions and systematics.}
 \label{fig:rgdisppred}
 \end{figure*}
@@ -1075,7 +1086,7 @@ given the large errors in the predictions and systematics.}
 \subsubsection{Future directions}
 We find that tests of modified gravity through
 comparison of the positions of red giant and main sequence stars
-are inconclusive, mainly oweing to the error associated with the
+are inconclusive, mainly owing to the error associated with the
 small sample size.  Also, because red giants are only
 partially screened, the signal may be diluted when compared to
 the tests of the previous sections.
@@ -1127,7 +1138,7 @@ a statistically significant higher fraction of such U-shaped warps in the
 unscreened sample.
 
 \subsection{Data and estimation of warp parameter}
-We search for warp in low mass, nearly edge-on galaxies using the
+We search for warps in low mass, nearly edge-on galaxies using the
 ALFALFA and SDSS data. The rotation velocity measured by the former is used to
 find self-screened galaxies, and images from the latter are
 used to estimate the galaxy warp.
@@ -1162,11 +1173,13 @@ An example of such a cleaned warp curve is shown on Figure \ref{warp-eg}.
 \begin{figure*}
 \begin{center}
   \includegraphics[scale=0.5]{figures/AGC225926-warp-curve.png}
-\caption{Example of warp-curve. The left panel shows the warp curve. The red
-vertical line shows the x-center of the galaxy. The $x$-axis is given in the unit
+\caption{An example of the estimation of warping from a disk galaxy image. 
+The left panel shows the estimated warp curve. The red
+vertical line shows the $x$-center of the galaxy. The $x$-axis is given in the unit
 of half light radius ($h_r$) of the galaxy. In the right panel we superimpose
-the warp curve on the optical image of the galaxy. The intersection of vertical
-and horizontal red lines shows the center of the galaxy.}
+the warp curve on the optical image of the galaxy. %The intersection of the vertical
+%and horizontal red lines shows the center of the galaxy.
+}
 \label{warp-eg}
 \end{center}
 \end{figure*}
@@ -1241,16 +1254,15 @@ all types of observed warps.
  
 \includegraphics[scale=0.45]{figures/warp-hist-sc-unsc.png}
 \includegraphics[scale=0.44]{figures/warp-kpc-hist-sc-unsc.png}
-\caption{ The distribution of warp for screened and unscreened galaxies for
+\caption{ The distribution of warps for screened and unscreened galaxies for
 $f_{R0} = 2\times10^{-7}$.
-The left panel shows the distribution of warp parameter calculated using
-Eq.\ref{warp-param} and the  right panel is for the warp parameter
-calculated using Eq.\ref{warp-param2}. Both parameters are measured within 3
-times the half light radius of the galaxies. No significant difference is found
-between the distributions of warp of  screened and unscreened galaxies on
-the left and a marginal difference is found on the right with more warp
-for unscreened galaxies. This discrepancy can be solved if we consider size
-bias.}
+The left panel shows the dimensionless warp estimated using 
+Eq.\ref{warp-param} and the  right panel shows the estimate in kpc using   
+  Eq.\ref{warp-param2}. No significant difference is found
+between the distributions of warps of  screened and unscreened galaxies in 
+the left panel. A marginal difference is found on the right with more warp
+for unscreened galaxies. This discrepancy does not remain if we account for size
+bias as discussed in the text.}
 \label{fig:warp-distr}
 \end{center}
 \end{figure*}
@@ -1273,18 +1285,19 @@ right panel of \ref{fig:warp-distr} as due to this size bias.
 \begin{figure*}
 \begin{center}
 \includegraphics[scale=0.43]{figures/size-warpness-kpc.png}
-\caption{The left panel shows the strength of warp in kpc as a function of
+\caption{The left panel shows the strength of the warp in kpc as a function of
 galaxy size. The small black and red dots
 represent individual measurements of screened and unscreened galaxies for
-$f_{R0} = 2 \times10^{-7}$  and large circles
-with error bars show the average warp within half light bins of 1 kpc.  The
-lines are the best fit linear relations between
-the half light radius and warp for $f_{R0} = 2 \times10^{-7}$. The slopes of
+$f_{R0} = 2 \times10^{-7}$. The large circles
+with error bars show the average warp.  The
+lines are the best fit linear relation to these averages. The slopes of
 the lines are shown in the top left corner. The right panel shows the estimated
-warp in a modified gravity scenario, i.e., the difference between warp
+contribution to the warp due to MG, i.e., the difference between warp
 of unscreened
 ($w_u$) and screened samples ($w_s$). The blue and green lines shows the
-predictions with $\Delta G/G = 1$ and $\Delta G/G = 1/3$}
+predictions with $\Delta G/G = 1$ and $\Delta G/G = 1/3$. Given the error
+bars, we are unable to test these models. 
+}
 \label{fig:size-warp-kpc}
 \end{center}
 \end{figure*}
@@ -1436,9 +1449,9 @@ galaxy in the right panel has HI $<$ \ha{}.
 \begin{figure}
 \begin{center}
   \includegraphics[scale=0.4]{figures/H1-HA-rot-eg.png}
-\caption{An example of rotation curves for two galaxies, measured by \ha{}
-(dots with errorbars) and HI (solid lines).
-These Images are taken from \citet{Swaters2009}.}
+\caption{An example of rotation curves for two galaxies, measured in \ha{}
+(dots with error bars) and HI (solid lines).
+The data are taken from \citet{Swaters2009}.}
 \label{h1-ha-rot-eg}
 \end{center}
 \end{figure}
@@ -1447,12 +1460,13 @@ These Images are taken from \citet{Swaters2009}.}
 \begin{center}
 \includegraphics[trim= 0cm 0cm 0cm 0cm, clip = true,
 width=0.4\textwidth]{figures/vivalpha.png}
-\caption{The difference between HI and \ha~ velocity curves.
-We plot the distribution of $\Delta {v}=v_{HI}-v_{H\alpha}$ for
-\citet{Swaters2009} data (black histogram). In red we plot the same
-once we add individual errors in the $\Delta v$ measurements. We over plot in
-blue the best Gaussian. We label the mean $\Delta v$ on the plot. This
-shows that rotation curves determined from \ha{} and HI agree.}
+\caption{The difference between HI and \ha~ rotation velocities.
+We plot the distribution of $\Delta {v}=v_{HI}-v_{H\alpha}$ for the 
+\citet{Swaters2009} data (black histogram). The red histogram includes 
+individual errors in the $\Delta v$ measurements. We over plot in
+blue the best fit Gaussian. The mean value of the difference is indicated as well, showing that the 
+rotation curves agree
+to better than 2 km/s.}
 \label{h1-ha-rot}
 \end{center}
 \end{figure}
@@ -1499,14 +1513,14 @@ in the presence of a fifth force.
 \begin{center}
 \includegraphics[trim= 3cm 0cm 0cm 0cm, clip = true, width=0.45\textwidth]
 {figures/GHASP2.png}
-\caption{The relative \ha{} rotation curve asymmetry $a=|\Delta v|/v$ as a
-function of rotation velocity for GHASP galaxies. Black (red) points
-indicate screened (unscreened) galaxies, using $f_{R0}=10^{-6}$.
+\caption{The  \ha{} rotation curve asymmetry $a=|\Delta v|/v$ is shown as a
+function of rotation velocity for  galaxies from the GHASP survey. Black (red) points
+indicate screened (unscreened) galaxies for $f_{R0}=10^{-6}$.
 The mean and standard deviations of each distribution are shown by the large
-dots at the left of the plot. The shapes of individual points indicate
+dots at the left of the plot. The shapes of individual points indicate the 
 morphology of the rotation curves: diamonds indicate smoothly asymmetric
 curves, squares indicate barred galaxies, and empty circles indicate irregular
-galaxies.  See the text for details.
+galaxies.  See  text for details.
 \label{fig:plotsGHASP}}
 \end{center}
 \end{figure}
@@ -1530,7 +1544,7 @@ positive signal may indicate the presence of fifth force.
 
 \subsubsection{Data and visual classification of rotation curves}
 We use \ha{} rotation curves for nearly 200 disk
-galaxies from  the Gassendi \ha{} survey of SPirals (GHASP) archive
+galaxies from  the Gassendi \ha{} survey of spirals (GHASP) archive
 \citep[see][and references therein]{epinat08a} to search for asymmetry in
 rotation curves. GHASP is an \ha{} kinematic survey of spiral and
 irregular galaxies. This survey has observed $\sim 220$ galaxies, and
@@ -1712,48 +1726,53 @@ inhomogeneous massive star formation regions.
 \label{sec:discussion}
 We have explored several astrophysical tests of modified gravity which rely on
 partially-screened dwarf galaxies in which fifth force effects act on
-diffuse components (e.g. gas, dark matter, and giant stars), while more
-compact components (e.g. main sequence stars) are screened from these effects.
-These tests may constrain important regimes of the modified gravity
-parameter space which cannot be informed by cosmological tests or
+diffuse components (gas, dark matter, and giant stars), while more
+compact components (main sequence stars) are screened from these effects.
+These tests probe regions of the parameter space of chameleon type gravity
+theories which have have not been probed by cosmological tests or
 laboratory experiments.  The observables include offsets between the stellar
 and gaseous components, warping of stellar disks, and asymmetry in the
-gaseous rotation curves. Our study relies on previously-published
+gaseous rotation curves. Our study relies on a variety of previously-published
 observational data.
 
+\subsection{Summary of results}
 
-The offset study based on optical and HI centroids shows that it is not
+\begin{itemize}
+\item {\it Offset between HI gas and stars:}
+The offset study based on optical and HI gas centroids shows that it is not
 possible to distinguish between gravity theories using the current HI data. 
 The accuracy of the astrometry is principally limited by the large beam size of
 the 21cm observations.  However, with a larger catalog of candidate
 galaxies and/or more accurate radio astrometry, this test may provide
-competitive constraints in the future.
+competitive constraints in the future. In this section we summarize our results, 
+discuss systematic errors and examine prospects for improved tests. 
 
+\item {\it Offset between optical and dynamical center:}
 An alternative means of measuring this expected offset, the difference
 between the optical centroid and the kinematical centroid of \ha{}, is
 much more precise and limits the component of modified gravity scatter
 to  $\sim 2$\% of the optical radius of the galaxy, ruling out 5\%
 scatter at the 3-$\sigma$ level.
 
+\item {\it Offset between red giants and main sequence stars:}
 We show that the offset between the partially-screened red giant
 population and the fully-screened main sequence population is too
-affected by systematic effects to provide any meaningful power to distinguish
+sensitive by systematic effects to provide any meaningful power to distinguish
 between gravity theories: the data is consistent with both GR and MG at
 a 2-$\sigma$ level.  This test has the potential to improve as more stellar
 populations are observed within nearby dwarf galaxies.
 
+\item {\it Warps in edge-on galaxies:}
 The warp study relies on measurements of the optical morphology of stellar
 disks of late-type galaxies observed by SDSS.
-We find that the warp measures for the current galaxy are
+We find that the warp measures for this galaxy sample are
 consistent with both GR and modified gravity theories: the main limitation
 is the relatively small number of suitable galaxies for which kinematic data
 is available in order to estimate the screening level of the galaxies in
-the sample.  We estimate that this test would be able to
-distinguish between GR and modified gravity if the sample were increased
-from the current $\sim$500 galaxies to large number
-with estimates of the internal halo profile.
+the sample.   
 
-In the final test we used the GHASP sample to estimate
+\item {\it Rotation curve tests: }
+In the final test we used the GHASP galaxy sample to estimate
 the asymmetry in the \ha{} rotation curves, which arises due to the
 offset between the screened stellar component and the unscreened gaseous
 component. We find that the asymmetry attributable to modified gravity is as
@@ -1765,10 +1784,11 @@ major uncertainties: systematic uncertainties in the data due to effects of
 asymmetric drift and non-circular motions, and systematic uncertainties in
 the theoretical expectation due to insufficient knowledge of the internal
 halo parameters and external environment of each galaxy.
+\end{itemize}
 
 Finally, we examined individual rotation curves from the GHASP 
-galaxies and classified them based on the different signatures 
-in the curves. We found that the majority of these galaxies 
+galaxy sample and classified them based on the different signatures 
+in the curves (see Appendix D). We found that the majority of these galaxies 
 have fairly symmetric curves regardless
 of their local density/potential. However, we identified a 
 few galaxies with interesting features in the rotation curves.
@@ -1778,45 +1798,66 @@ More detailed studies of these individual cases can shed light
 on whether the features may be attributable to fifth-force effects or
 more traditional astrophysical processes.
 
-\subsection{Caveats}
+
+\subsection{Systematic errors and caveats}
 \label{sec:caveat}
-The majority of the tests performed here involve aggregate statistical
-comparison between the unscreened sample and the screened control sample.
-One of the most prominent assumptions in this type of study is that, apart
+The  tests performed here involve aggregate statistical
+comparisons between the unscreened galaxy sample and the screened (control) sample.
+One of the major assumptions in this type of study is that, apart
 from screening level, the two samples are statistically similar.  As noted
-above, for many of the tests this division correlates with galaxy size, so
-this assumption may not precisely hold.  We attempt to minimize this bias
-by looking only at galaxies near the self-screening threshold.  However,
+above, for many of the tests this division correlates with galaxy size. 
+In some cases we attempt to minimize any potential bias
+by looking only at galaxies near the self-screening threshold (at the cost
+of weakening the signal).  However,
 a more precise result could be obtained given a large sample of low-mass,
-environmentally screened galaxies.  For this reason, we recommend that
+environmentally screened galaxies.  Galaxies in the two samples would then
+have the same distribution in size and mass. So we recommend that
 future studies in this direction prioritize new observations of low-mass
-galaxies.
+galaxies in both the field and near large neighbors.
 
 Another important caveat is that we use a large, heterogenous data set to
-perform the above tests.  Because these data were gathered without this
+perform the above tests.  Because the data were gathered without this
 type of test in mind, there was little specific attempt to control
-systematic errors which can affect explorations of modified gravity.
-One particular example of this is the constraint based on separation of
-HI and optical centroids: the strength of the test depends highly on the
-precise characteristics of the error in centroid determination: even a
-10\% overestimate of the error can lead to 50\% differences in the
+systematic errors that can affect explorations of modified gravity.
+One extreme example of this is the constraint based on separation of
+HI and optical centroids: the strength of the test is sensitive to the
+ characteristics of the error in centroid determination: even a
+10\% overestimate of the error can impact the
 resulting constraints.  Observing campaigns specifically designed for this
 sort of modified gravity test could yield homogeneous data sets with such
-systematic effects minimized, and lead to tighter observational constraints
-on the parameters of modified gravity theories.
+systematic effects minimized.
+
+The third major caveat comes from uncertainties in our estimate of the 
+external potential at the locations of dwarf galaxies. We have estimated the 
+Newtonian potential as well as the fifth force, estimated using the masses 
+and locations of neighboring galaxies. This estimate is subject to the 
+uncertainties in mass estimation of galaxies. It can be improved in a number of 
+ways: completeness over the neighborhood of the dwarf galaxy
+sample, mass estimates using spectroscopic or 21cm observations, and better modeling of the mass and scalar field distribution. The improved modeling 
+can be done by explicitly solving for the scalar field at each location, including the 
+presence of underdense regions that also contribute to the fifth force. For some
+of the tests only a $\sim 10$ Mpc sized region needs to studied in detail, so 
+the observations and modeling are tractable. 
 
 \subsection{Future prospects}
-Here we summarize our suggestions for future attempts at constraining
-gravity theories using observations of dwarf galaxies.
-\begin{enumerate}
-\item {\it Offset between HI and optical image:}
+Here we discuss specific ways to sharpen each of the tests we have carried out and summarized above in subsection 7.1. Before we get to these tests, we note that a variety of experiments can be used to test gravity theories, ranging from laboratory to cosmological scales. For chameleon type scalar-tensor theories, the first in our series of papers \citep{jainvinu2012} used cepheid variable stars and other distance indicators to place stringent limits on the two parameters of the theories: the coupling $\alpha$ (related to $\Delta G/G$ in this paper) and the background field value (equivalent to $f_{R0}$ in this paper).  The upper limit for $f(R)$ models obtained using cepheids correspond to $\Delta G/G\simeq 1/3; f_{R0}\simeq 5\times10^{-7}$, or a fifth force range below 1 Mpc at cosmic mean density: these are far more stringent than limits from large-scale, cosmological tests as discussed by \citet{jainvinu2012}. For tests using other tracers in the Milky Way, see \citet{Brax2013} and reference therein. 
+
+Dwarf galaxy tests currently probe larger coupling values. However the field values probed can be lower, especially with the fainter dwarf galaxies within $\sim 10$ Mpc of the Milky Way. The limits on both parameters can be improved significantly 
+for all the tests we have considered. A brief account for each test follows, though 
+detailed studies are needed to plan future observations.  
+
+\begin{itemize}
+\item {\it Offset between HI gas and stars:}
   For this test to produce competitive constraints, it is crucial to improve
   the precision of the centroid measurement, either through telescopes with
   a smaller beam size, or through the stacking of many more galaxy images.
   Using the ALFALFA data, the error in the offset estimate is $\sim$ 1 kpc;
   to get an error of 100 pc we need to stack $\sim 10^{4}$
   galaxies.  Furthermore, the characteristics of the error
-  in the centroid must be understood at the $\sim$1\% level.
+  in the centroid must be understood at the few percent level. A better way forward
+  would be to get improved resolution radio maps (e.g. via VLA observations), 
+  which would then relax
+  the required sample size and lower the systematic uncertainty. 
   %%BJ: centroid error ~ 1/sqrt(N)?
 \item {\it Offset between optical and dynamical center:}
   increasing the number of \ha~ rotation curves to a few hundred 
@@ -1824,7 +1865,7 @@ gravity theories using observations of dwarf galaxies.
   this measurement.  More important is sophisticated
   modeling of the environment of each galaxy to determine screening levels and
   the strength of the expected signal.
-\item {\it Offset between red giant and main sequence populations:}
+\item {\it Offset between red giants and main sequence stars:}
   Currently, the red giant displacement test is dominated primarily by
   systematic uncertainties. As the signal in this test is weaker than the
   other probes, the best approach would be to focus on a limited number
@@ -1835,9 +1876,12 @@ gravity theories using observations of dwarf galaxies.
   contributions of red giant and main sequence populations as a function of
   location in the galaxy.  A difference in these centroids could be
   attributed to modified gravity, using control tests similar to those in
-  this paper.
-\item {\it Warping in edge-on galaxies:}
-  To reduce the observed error in the warp to the level of uncertainty in the 
+  this paper.  This test is applied to a small number of 
+  very small but nearby galaxies (closer than 10 Mpc), so detailed studies of individual 
+  galaxies are feasible. 
+\item {\it Warps in edge-on galaxies:}
+  To reduce the observed error in the warp measurements 
+  to the level of uncertainty in the 
   predicted values requires high-quality images
   of about 10,000 dwarf galaxies in very low density environments and 20,000
   dwarf galaxies in low to moderately dense environments for $f(R)$ theories
@@ -1849,9 +1893,10 @@ gravity theories using observations of dwarf galaxies.
   this mass profile. Rotation curves that extend to the inner parts of the disk
 can
   constrain the mass profile. 
-\item {\it Stellar rotation curves: }
-  A direct measurement of $\Delta G/G$ can be made by
-  comparing HI rotation curves with stellar rotation curve. However 
+\item {\it  Rotation curve tests: }
+  We have examined asymmetries in rotation curve data. In addition, 
+  a direct measurement of $\Delta G/G$ can be made by
+  comparing HI rotation curves with stellar rotation curves (section 3.1). However 
   the stellar rotation curve must be measured using stellar absorption
   lines which arise very close to the surface of dwarf stars (not via 
   \ha{} as is common practice; see discussion in section 3.2).  These curves
@@ -1863,15 +1908,19 @@ can
   a handful of the unscreened galaxies can lead to strong constraints on
   modified gravity theories, free of many of the systematic uncertainties
   discussed above.
-\end{enumerate}
+\end{itemize}
 
 
 \section{Acknowledgments}
-We are grateful to Yang et al. for providing us their SDSS group catalog.  
-We thank Mike Jarvis for numerous suggestions and Lam Hui, 
+We are grateful to Xiaohu Yang and collaborators 
+for providing us their SDSS group catalog and to Richard Swaters for 
+rotation curve data. We have used published data from a variety of sources
+cited in the text.  
+We thank Mike Jarvis for several valuable suggestions and Gary 
+Bernstein, Andy Connolly, Julianne Dalcanton, Lam Hui, Kazuya Koyama, 
 Elisabeth Krause, Adam Lidz, Karen Masters, Masao Sako, 
 Matt Walker and Gongbo Zhao for helpful
-discussions. 
+discussions. This work was partially supported by NSF grant AST-0908027.
 
 Funding for the SDSS and SDSS-II has been provided by the Alfred P. Sloan
 Foundation, the Participating Institutions, the National Science Foundation,
@@ -2008,9 +2057,9 @@ the displacement of red giants.
 \begin{figure*}
 \includegraphics[scale=0.2]{figures/dispdist.png}
 \includegraphics[scale=0.2]{figures/dispdispcm.png}
-  \caption{We plot distance vs displacement in the left to study systematic
-effects due to lower resolution once we go further away.
-On the right, we plot the
+  \caption{We plot distance vs displacement in the left panel to study systematic
+effects due to lower resolution for more distant galaxies.
+In the right panel, we plot the
 correlation between red giants displacement and degree of asymmetry of the
 galaxy (the straight line shows y=x). Note how the asymmetry is bigger than
 the displacement in almost all the cases, 
@@ -2047,15 +2096,14 @@ camera used. None of these observables are correlated with the
 displacement of red giants.
 
 
-\section{Warp}
+\section{Measurement of Warps}
 \label{ap:warp}
-In this section we describe the systematicseffects related to warp results in
+In this section we describe the systematics effects related to the measurement of warps in
 section \ref{sec:warp}.
-We explore the bias in warp due to distance effects, inclination effects,
+We explore the bias due to distance effects, inclination effects,
 and environment.  Finally, we propose a third warp estimator
 and show that the conclusions of Section \ref{sec:warp} are unchanged.
-use another estimator for warp.
-
+ 
 \subsection{Distance Bias}
 \label{ap:distance-systematic}
 A number of systematic effects may be involved in the warp analysis.
@@ -2095,7 +2143,7 @@ and unscreened samples can be explained by this effect (compare figure
 \begin{center}
   \includegraphics[scale=0.37]{figures/distance-vs-warpness.png}
   \includegraphics[scale=0.37]{figures/distance-vs-warp-kpc.png}
-  \caption{Systematic effects involved in warp test. The left panel shows the
+  \caption{Systematic effects involved in the warp test. The left panel shows the
 warp ($w_1$) vs distance (Eq. \ref{warp-param}), right panel shows
 warp in kpc vs  distance (Eq. \ref{warp-param2}) for screened and
 unscreened galaxies. If the screened sample is systematically
@@ -2127,7 +2175,7 @@ equally, and therefore is unlikely to bias our result.
 \begin{center}
   \includegraphics[scale=0.4]{figures/axis-ratio-dist.png}
 \caption{The distribution of axis ratio for screened and
-unscreened galaxies with $f_{R0}=2\times10^{-7}$. No difference found between
+unscreened galaxies with $f_{R0}=2\times10^{-7}$. We find no difference  between
 the two samples.}
 \label{warp-incl}
 \end{center}
@@ -2159,14 +2207,14 @@ sample.
 \begin{center}
 \includegraphics[scale=0.35]{figures/warp-frac-vs-environ.png}
 \caption{The fraction of galaxies displaying U-shaped warps
-  verses the. In this plot, galaxies are classified as U-shaped only
+  vs the magnitude of the external potential. In this plot, galaxies are classified as U-shaped only
   if the warp is greater than or equal to 3\%.}
 \label{fig:warp-stren-frac}
 \end{center}
 \end{figure}
 
 
-\subsection{Distribution of warp}
+\subsection{Distribution of warps}
 \label{ap:warp-distri}
 In Section \ref{sec:warp} we have shown that the distribution of
 U-type warp does not depend on the the environment. However, we include
@@ -2205,14 +2253,6 @@ warps in screened and unscreened regions with $f_{R0}=2\times10^{-7}$.}
 \end{center}
 \end{figure*}
 
-In Figure \ref{fig:warp-stren-frac} we show the fraction of galaxies
-with U-type warps in different environments. We check whether the fraction of
-normal galaxies and fraction of S-type galaxies have any dependence on their
-environment and the result is shown in Figure \ref{warp-frac}. We classify
-a galaxy as normal if the warp is less than 5\%.  We find that the
-fractions of different types of galaxies is independent of their
-environment. The result is insensitive to
-the definition of normal galaxy.
 
 \begin{figure}
 \begin{center}
@@ -2224,6 +2264,16 @@ calculated by assuming Poissonian noise on the number of galaxies.}
 \label{warp-frac}
 \end{center}
 \end{figure}
+
+
+In Figure \ref{fig:warp-stren-frac} we show the fraction of galaxies
+with U-type warps in different environments. We check whether the fraction of
+normal galaxies and fraction of S-type galaxies have any dependence on their
+environment and the result is shown in Figure \ref{warp-frac}. We classify
+a galaxy as normal if the warp is less than 5\%.  We find that the
+fractions of different types of galaxies is independent of their
+environment. The result is insensitive to
+the definition of normal galaxy.
 
 
 
@@ -2310,7 +2360,7 @@ MG predictions shown in the last column.
 We present some examples of optical images (Figures \ref{fig:eg-image-1} \&
 \ref{fig:eg-image-2}) and rotation curves (Figures \ref{fig:GHASPsym} \&
 \ref{fig:GHASPasym}) of unscreened galaxies from the literature which look
-interesting under modified gravity scenario. 
+interesting in the context of modified gravity. 
 
 
 \begin{figure*}
@@ -2324,11 +2374,10 @@ interesting under modified gravity scenario.
 \includegraphics[trim= 0cm 0cm 0cm 0cm, clip = true, width=0.3\textwidth]
 {figures/UGC4325.jpg}}
 \caption{{\it Left panel:} Optical image of dwarf galaxy UGC 3740 which is
-unscreened for $f_{R0}=10^{-6}$. The galaxy is asymmetric in optical. The \ha~
+unscreened for $f_{R0}=10^{-6}$. The galaxy is asymmetric in the optical. The \ha~
 rotation curve also shows strong asymmetry. 
 {\it Right panel:} Comparison of HI and optical images of UGC 4325. The HI
-image shows some asymmetry. However, this does not have any neighbors near. See
-text for more details. The images are taken from \citet{figgs2008,swaters2002b}
+image shows some asymmetry. However, this galaxy does not have any nearby neighbors to which we could attribute an external force. The images are taken from \citet{figgs2008,swaters2002b}
 \label{fig:eg-image-1}}
 \end{figure*}
 
@@ -2343,10 +2392,10 @@ text for more details. The images are taken from \citet{figgs2008,swaters2002b}
 \centering{
 \includegraphics[trim= 0cm 0cm 0cm 0cm, clip = true, width=0.3\textwidth]
 {figures/ugc1913.jpg}}
-\caption{Optical images of the galaxies with the most asymmetric \ha~
+\caption{Optical images of  galaxies with the most asymmetric \ha~
 velocity curves: {\it Left panel:} 
 UGC 7831 which is unscreened for $f_{R0}=10^{-6}$ and shows some warp.  
-{\it Middle panel:} UGC 5721. {\it Right panel:} UGC 1913. See text for details.
+{\it Middle panel:} UGC 5721. {\it Right panel:} UGC 1913. 
 The images are taken from \citet{figgs2008}
 \label{fig:eg-image-2}}
 \end{figure*}
@@ -2357,22 +2406,20 @@ The images are taken from \citet{figgs2008}
 \centering{
 \includegraphics[trim= 0cm 0cm 0cm 0cm, clip = true, width=0.9\textwidth]
 {figures/symmetric.png}}
-\caption{Examples of \ha~ symmetric rotation curves for GHASP galaxies.  x
-coordinates show main axis in kpc, y coordinates show velocity in km/s before 
-correcting for inclination. The
+\caption{Examples of \ha~ symmetric rotation curves for GHASP galaxies.  The x-axis  is in kpc, and the y-axis shows the measure rotation velocity in km/s (before 
+correcting for inclination). The
 left side points of the rotation curves are shown as red points for comparison 
 to the right side. We indicate the
-name of the galaxy, also $\Delta v$ defined in the text and the
-potential created by clusters and galaxies within 3 Mpc. 
-The potential is written 
+name of the galaxy,  $\Delta v$ defined in the text and the external 
+potential due to neighbors within 3 Mpc. 
+The potential is  
 in red if the galaxy is unscreened, 
 and black if it is environmentally screened, for $f_{R0}=10^{-6}$. 
 We label the inclination and the averaged maximum velocity of the galaxy
 once corrected for inclination.
-Diamonds show HI curves, when available. Blue vertical lines show the range 
-used to calculate $\Delta v$, based on half-light radius. Note how UGC 4325
-shows a difference between HI and \ha~, 
-in the direction predicted by modified gravity, HI $>$ \ha{}
+Diamonds show HI curves, when available. The blue vertical lines show the range 
+used to calculate $\Delta v$, based on its half-light radius. Note that for UGC 4325
+the velocity in HI is larger than in \ha{}.  
 \label{fig:GHASPsym}}
 \end{figure*}
 
@@ -2382,7 +2429,7 @@ in the direction predicted by modified gravity, HI $>$ \ha{}
 {figures/asymmetric.png}}
 \caption{Same as Figure \ref{fig:GHASPsym} for smoothly asymmetric curves, 
 selected visually. These slow varying asymmetries could be created by modified
-gravity. We study these in detail in the text.
+gravity.  
 \label{fig:GHASPasym}}
 \end{figure*}
 
